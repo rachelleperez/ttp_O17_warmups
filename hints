@@ -1,0 +1,24 @@
+-- Did you know you can make multiple CTEs? Here's the syntax
+WITH <name> AS (Query)
+, <name> AS (Query)
+, <name> AS (Query)
+SELECT ....
+
+
+-- Get all actors that have been in the same films as the most popular actor
+-- OPTION: Try to get it all in one go, or do this in steps (see 1-3)
+
+-- 1. Get the actor_id of the most popular actor (ie the actor who as been in the most films)
+
+-- 2. Using the answer from above (actor_id 107), get a list of all the films that
+-- actor has been in.
+
+-- 3. USING the list from the previous answer (going to have to use a CTE or subquery),
+-- get a list of the names of all the actors that have been in those films 
+-- (ie all the actors that have acted with the most popular actor)
+-- BONUS: exclude the most popular actor from the list.
+
+
+-- 4. Can you do all of the above in one SQL execution (using multiple subqueries/CTE's)?
+-- Get all actors that have been in the same films as the most popular actor
+-- BONUS: exclude the most popular actor from the list.
